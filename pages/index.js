@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ['latin'] });
 export default function Home() {
   return (
     <main className={`min-h-screen mx-auto ${inter.className} `}>
-      <div className="w-full h-full max-h-[1500px] aspect-square  bg-gradient-to-br relative from-sky-800 to-teal-600 ">
+      <div className="w-full h-full max-w-[1502px] max-h-[1495px] aspect-square  bg-gradient-to-br relative from-sky-800 to-teal-600 mx-auto">
         <div className="p-[4rem] flex flex-col items-center max-w-[96rem] mx-auto">
           <h1 className="text-center text-white text-[76px] font-semibold mb-[14px]">
             Check your financial health
