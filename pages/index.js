@@ -3,13 +3,14 @@ import PhoneImage from '@/assets/phone.png';
 import CheckBox from '@/assets/checkbox.png';
 import HowItWorks from '@/assets/howtodo.png';
 import Image from 'next/image';
+import TodoList from '@/components/Todo';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
     <main className={`min-h-screen mx-auto ${inter.className} `}>
-      <div className="w-full h-full aspect-square  bg-gradient-to-br relative from-sky-800 to-teal-600 ">
+      <div className="w-full h-full max-h-[1500px] aspect-square  bg-gradient-to-br relative from-sky-800 to-teal-600 ">
         <div className="p-[4rem] flex flex-col items-center max-w-[96rem] mx-auto">
           <h1 className="text-center text-white text-[76px] font-semibold mb-[14px]">
             Check your financial health
@@ -138,6 +139,9 @@ export default function Home() {
             </span>
           </button>
         </div>
+      </div>
+      <div className="mt-[10rem]">
+        <TodoList />
       </div>
     </main>
   );
