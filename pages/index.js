@@ -20,14 +20,14 @@ export default function Home() {
             <br />
             card for your finances- within minutes!
           </p>
-          <button className="w-[265px] h-[68px] mt-[32px] flex justify-center items-center bg-orange-500 rounded-[32px] shadow ">
-            <span className="text-white text-[24px] font-bold">
+          <button className="w-[265px] h-[68px] mt-[32px] flex justify-center items-center bg-orange-500 rounded-[32px] shadow z-10">
+            <span className="text-white text-[24px] font-bold ">
               Get Started
             </span>
           </button>
-          <div className="flex w-full px-9   justify-between mt-[100px]">
+          <div className="flex w-full px-9 gap-[22rem]  justify-between mt-[100px]">
             <div className="flex flex-col gap-6">
-              <div className="flex items-center gap-2">
+              <div className="flex items-start gap-2">
                 <Image
                   src={CheckBox}
                   width={100}
@@ -39,7 +39,7 @@ export default function Home() {
                   Expected Retirement Age
                 </p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-start gap-2">
                 <Image
                   src={CheckBox}
                   width={100}
@@ -53,7 +53,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col gap-6">
-              <div className="flex items-center gap-2">
+              <div className="flex items-start gap-2">
                 <Image
                   src={CheckBox}
                   width={100}
@@ -65,7 +65,7 @@ export default function Home() {
                   Personalised Road Map
                 </p>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-start gap-2">
                 <Image
                   src={CheckBox}
                   width={100}
@@ -89,7 +89,7 @@ export default function Home() {
             height={400}
             alt="phone"
             priority
-            className="object-cover w-full max-w-[400px]"
+            className="object-cover lg:w-[240px] xl:w-[320px]"
           />
         </div>
 
