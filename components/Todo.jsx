@@ -41,22 +41,22 @@ const TodoList = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 p-[4rem] flex items-center justify-center">
-      <div className="w-fit flex flex-col items-center bg-[#071115] p-[3rem] rounded-lg shadow-lg min-h-[30rem]">
+    <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 px-2 py-[2rem] xs:p-[2rem] sm:p-[4rem] flex items-center justify-center">
+      <div className="w-full flex flex-col items-center bg-[#071115] px-4 py-[3rem] xs:p-[3rem] rounded-lg shadow-lg min-h-[30rem] max-w-[45rem]">
         <h1 className="text-3xl text-white mb-8">Todo List</h1>
-        <div className="flex gap-6 items-center mb-12">
+        <div className="flex gap-6 items-center mb-12 w-full">
           <input
             type="text"
             placeholder="Enter a new task"
-            className="p-2 w-[20rem] bg-[#071115] border-2 focus:outline-none focus:border-white border-[#1d3b53] rounded-lg text-white"
+            className="p-2 w-full bg-[#071115] border-2 focus:outline-none focus:border-white border-[#1d3b53] rounded-lg text-white"
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
             onKeyDown={handleKeyDown}
           />
-          <div className="relative">
+          <div className="relative w-full">
             <input
               type="text"
-              className="p-2 pr-[2.5rem] w-[20rem] bg-[#071115] border-2 focus:outline-none focus:border-white border-[#1d3b53] rounded-lg text-white"
+              className="p-2 pr-[2.5rem] w-full bg-[#071115] border-2 focus:outline-none focus:border-white border-[#1d3b53] rounded-lg text-white"
               placeholder="Search tasks"
               value={searchTerm}
               onChange={handleSearch}
@@ -64,7 +64,7 @@ const TodoList = () => {
             <AiOutlineSearch className="absolute top-[10px] right-3 text-white text-[1.5rem]" />
           </div>
         </div>
-        <ul className="w-[25rem] flex flex-col gap-4">
+        <ul className="w-full md:w-[60%] flex flex-col gap-4">
           {filteredTasks.map((task) => (
             <li
               key={task.id}
