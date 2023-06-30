@@ -69,7 +69,7 @@ const TodoList = () => {
             <li
               key={task.id}
               className={`${
-                task.completed ? 'line-through text-[#1d3b53]' : ''
+                task.completed ? 'line-through text-[#bbc4cb]' : ''
               } px-4 py-2 rounded-lg   border-2 border-[#1d3b53]  flex items-center text-white transition-colors duration-300 ease-in-out gap-4 justify-between `}>
               <span className="truncate text-ellipsis">{task.text}</span>
               <div className="flex items-center gap-3">
