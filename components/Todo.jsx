@@ -41,18 +41,25 @@ const TodoList = () => {
   };
 
   return (
-    <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 px-2 py-[2rem] xs:p-[2rem] sm:p-[4rem] flex items-center justify-center">
+    <div className="bg-gradient-to-r from-violet-500 to-fuchsia-500 px-2 py-[1rem] xs:p-[2rem] sm:p-[4rem] flex items-center justify-center">
       <div className="w-full flex flex-col items-center bg-[#071115] px-4 py-[3rem] xs:p-[3rem] rounded-lg shadow-lg min-h-[30rem] max-w-[45rem]">
         <h1 className="text-3xl text-white mb-8">Todo List</h1>
         <div className="flex gap-6 items-center mb-12 w-full">
-          <input
-            type="text"
-            placeholder="Enter a new task"
-            className="p-2 w-full bg-[#071115] border-2 focus:outline-none focus:border-white border-[#1d3b53] rounded-lg text-white"
-            value={newTask}
-            onChange={(e) => setNewTask(e.target.value)}
-            onKeyDown={handleKeyDown}
-          />
+          <div className=" relative w-full">
+            <input
+              type="text"
+              placeholder="Enter a new task"
+              className="p-2 w-full bg-[#071115] border-2 focus:outline-none focus:border-white border-[#1d3b53] rounded-lg text-white pr-[4.5rem]"
+              value={newTask}
+              onChange={(e) => setNewTask(e.target.value)}
+              onKeyDown={handleKeyDown}
+            />
+            <button
+              onClick={handleNewTask}
+              className="absolute right-[6px] top-[15%] px-3 py-1 hover:bg-[#071115] transition-all duration-200 ease-in-out rounded-lg bg-[#1d3b53] text-white">
+              Add
+            </button>
+          </div>
           <div className="relative w-full">
             <input
               type="text"
